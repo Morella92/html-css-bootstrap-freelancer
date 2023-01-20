@@ -1,0 +1,27 @@
+/* DEBUG RULES */
+
+[class^="col"]{
+    border: 2px solid red;
+}
+
+.nav-col{
+    min-height: 50px;
+}
+
+.start-col{
+    min-height: 200px;
+}
+
+.portfolio-col {
+    min-height: 200px;
+}
+/* BG COLORS */
+.nav-section{
+    background-color: #2C3E50;
+}
+
+.start-boot{
+    background-color: #1ABC9C;
+}
+
+
