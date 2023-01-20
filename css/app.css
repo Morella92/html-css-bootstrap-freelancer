@@ -8,11 +8,11 @@
     min-height: 50px;
 }
 
-.start-col{
+.start-col, .contact-col, .footer-col{
     min-height: 200px;
 }
 
-.portfolio-col {
+.portfolio-col, .about-col{
     min-height: 200px;
 }
 /* BG COLORS */
@@ -24,4 +24,14 @@
     background-color: #1ABC9C;
 }
 
+.section-about{
+    background-color: #1ABC9C;
+}
 
+.info-section{
+    background-color: #3A546D;
+}
+
+.copyright-section{
+    background-color: #2C3E50;
+}
