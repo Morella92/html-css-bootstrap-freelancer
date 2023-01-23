@@ -1,27 +1,25 @@
-/* DEBUG RULES */
-
-[class^="col"]{
-    border: 2px solid red;
+img{
+    width: 100%;
 }
 
-.nav-col{
-    min-height: 50px;
+a{
+    color: currentColor;
+    text-decoration: none;
 }
 
-.start-col, .contact-col, .footer-col{
-    min-height: 200px;
+ul, li, menu {
+    list-style: none;
 }
 
-.portfolio-col, .about-col{
-    min-height: 200px;
-}
 /* BG COLORS */
 .nav-section{
     background-color: #2C3E50;
+    text-transform: uppercase;
 }
 
 .hero-section{
     background-color: #1ABC9C;
+    text-transform: uppercase;
 }
 
 .about-section{
@@ -34,4 +32,84 @@
 
 .copyright-section{
     background-color: #2C3E50;
+}
+
+/* TITLES RULES */
+
+.titles{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.small-titles{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+/* HERO RULES */
+
+.hero__img{
+    width: 200px;
+}
+
+.star{
+    font-size: 20px;
+}
+.star::before{
+    display: table;
+    content: "";
+    background-color: white;
+    height: 4px;
+    width: 20%;
+}
+
+.star::after{
+    display: table;
+    content: "";
+    background-color: white;
+    height: 4px;
+    width: 20%;
+}
+
+.star-black{
+    font-size: 20px;
+}
+.star-black::before{
+    display: table;
+    content: "";
+    background-color: black;
+    height: 4px;
+    width: 20%;
+}
+
+.star-black::after{
+    display: table;
+    content: "";
+    background-color: black;
+    height: 4px;
+    width: 20%;
+}
+
+/* PORTFOLIO RULES */
+
+.portfolio__img{
+    border-radius: 10px;
+}
+
+/* CONTACT RULES */
+
+.btn{
+    background-color: #1ABC9C;
+    border-color: currentColor;
+}
+/* FOOTER RULES */
+
+.img-details{
+    font-size: 20px;
+}
+
+.color-green{
+    color: #1ABC9C;
 }
