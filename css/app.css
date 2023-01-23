@@ -113,3 +113,11 @@ ul, li, menu {
 .color-green{
     color: #1ABC9C;
 }
+
+.circle-icon{
+    border: 1px solid white;
+    border-radius: 100%;
+    object-fit: cover;
+    width: 20px;
+    height: 20px;
+}
