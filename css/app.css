@@ -52,23 +52,24 @@ ul, li, menu {
 
 .hero__img{
     width: 200px;
+    display: block;
+    /* block per togliere lo spazio in più che ha 
+    l'immagine */
+    margin: 0 auto;
+    /* per centrarla perchè avendo il block
+    il text center non funziona più */
 }
 
 .star{
     font-size: 20px;
 }
-.star::before{
-    display: table;
-    content: "";
-    background-color: white;
-    height: 4px;
-    width: 20%;
-}
-
+.star::before,
 .star::after{
-    display: table;
+    display: block;
     content: "";
     background-color: white;
+    /* bastava mettere currentcolor invece di fare 
+    2 classi diverse */
     height: 4px;
     width: 20%;
 }
@@ -76,22 +77,21 @@ ul, li, menu {
 .star-black{
     font-size: 20px;
 }
-.star-black::before{
-    display: table;
-    content: "";
-    background-color: black;
-    height: 4px;
-    width: 20%;
-}
 
+.star-black::before,
 .star-black::after{
-    display: table;
+    display: block;
     content: "";
     background-color: black;
     height: 4px;
     width: 20%;
 }
 
+.hero-list:not(:last-child)::after{
+    display: inline-block;
+    content: "-";
+    margin: 0 10px;
+}
 /* PORTFOLIO RULES */
 
 .portfolio__img{
